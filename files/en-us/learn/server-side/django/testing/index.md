@@ -957,6 +957,8 @@ This will include who has access, the initial date, the template used, and where
 You might use the following code to set up your test and assign your user the appropriate permission
 
 ```python
+from django.contrib.contenttypes.models import ContentType
+
 class AuthorCreateViewTest(TestCase):
     """Test case for the AuthorCreate view (Created as Challenge)."""
 
